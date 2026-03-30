@@ -27,6 +27,9 @@ public class Carro {
         System.out.println("Modelo: " + modelo);
         System.out.println("Ano: " + ano);
     }
+    public int idadeDoCarro(){
+        return 2026 - ano;
+    }
 }
 
 
