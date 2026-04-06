@@ -3,11 +3,17 @@ public class Carro {
     private String modelo;
     private int ano;
 
+    // Atributo de classe (static)
+    public static int totalCarros = 0;
+
+
     // construtor parametrizado ai o
     public Carro(String marca, String modelo, int ano) {
         this.marca = marca;
         this.modelo = modelo;
         setAno(ano); // reaproveita a validação
+
+        totalCarros++; // contador
     }
 
     // Construtor vazio (sobrecarga)
