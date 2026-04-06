@@ -1,15 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
+        int x; // declarada aqui, no escopo do metodo
 
-        Carro c1 = new Carro("Honda", "Civic", 2022);
-        Carro c2 = new Carro();
+        if (true) {
+            x = 10; // inicializa dentro do if
+        }
 
-        c1.exibir();
-        System.out.println();
-        c2.exibir();
-
-        Carro.imprimirTotal();
-
+        System.out.println(x); // agora funciona
     }
 }
