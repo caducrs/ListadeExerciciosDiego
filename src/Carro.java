@@ -6,6 +6,7 @@ public class Carro {
     // Atributo de classe (static)
     public static int totalCarros = 0;
 
+    public static final int ANO_PRIMEIRO_CARRO = 1886;
 
     // construtor parametrizado ai o
     public Carro(String marca, String modelo, int ano) {
@@ -32,8 +33,9 @@ public class Carro {
     public void setAno(int ano) {
         int anoAtual = java.time.Year.now().getValue();
 
-        if (ano < 1886 || ano > anoAtual) {
-            System.out.println("Ano Inválido! Deve estar entre 1886 e " + anoAtual);
+        // Usando a constante
+        if (ano < ANO_PRIMEIRO_CARRO || ano > anoAtual) {
+            System.out.println("Ano Inválido! Deve estar entre " + ANO_PRIMEIRO_CARRO + " e " + anoAtual);
         } else {
             this.ano = ano;
         }
