@@ -1,12 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        int x; // declarada aqui, no escopo do metodo
+        int a = 10;
+        int b = a; // b recebe uma cópia do valor de a
+        b = 99;
 
-        if (true) {
-            x = 10; // inicializa dentro do if
-        }
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
 
-        System.out.println(x); // agora funciona
+        // alterar b nao afeta a porque sao dois espaços de memoria diferente
     }
 }
