@@ -10,6 +10,11 @@ public class Carro {
         setAno(ano); // reaproveita a validação
     }
 
+    // Construtor vazio (sobrecarga)
+    public Carro() {
+        this("Desconhecido", "Desconhecido", 0);
+    }
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
