@@ -8,13 +8,11 @@ public class Main {
         Carro c4 = new Carro();
         Carro c5 = new Carro("Ford", "Mustang", 2023);
 
-        System.out.println("Carro 1:");
         c1.exibir();
-        System.out.println("\nCarro 2:");
+        System.out.println();
         c2.exibir();
 
-        // total de carros
-        System.out.println("\nTotal de carros criados: " + Carro.totalCarros);
-
+        // Usando o metodo static
+        Carro.imprimirTotal();
     }
 }

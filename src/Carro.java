@@ -61,4 +61,7 @@ public class Carro {
         int anoAtual = java.time.Year.now().getValue();
         return anoAtual - ano;
     }
+    public static void imprimirTotal() {
+        System.out.println("Total de carros criados: " + totalCarros);
+    }
 }
